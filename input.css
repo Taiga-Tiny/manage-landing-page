@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 790px;
+    background-position:122% -9%;
+}
+nav{ 
+    margin: 52px 160px;
+}
+#hero{  
+    padding: 58px 160px;
+}
+#features{  
+    padding: 65px 160px;
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 690px;
+    background-position: -36% -467%;
+}
+#testimonials{
+    padding: 92px 160px 142px 160px;
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 690px;
+    background-position:-37% -409%;
+}
+#cta{
+    padding: 62px 160px;
+}
+footer{
+    padding: 51px 160px 53px 160px;
+   
+}
+@media(max-width:1024px){
+    nav{    
+        margin: 52px 24px;
+    }
+    #hero{
+ 
+        padding: 58px 24px;
+    }
+    #features{
+
+        padding: 65px 24px;
+        background-image: unset;
+    }
+    #testimonials{
+        padding: 92px 24px 172px 24px;
+        background-image: unset;
+    }
+    #cta{
+        padding: 62px 24px;
+    }
+    footer{
+        padding: 51px 24px 53px 24px;
+    }
+}
+
+.hamburger{
+    cursor: pointer;
+    width:24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+   transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+ }
+ .open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.bg-white {
+    background-color:hsl(12,88%,59%);
+}
+.bg-white\/50 {
+     background-color: transparent;
+    border: 1px solid hsl(12,88%,59%);
+}
